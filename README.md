@@ -4,7 +4,7 @@ GUI-based NLP Toolkit using Free APIs for Sentiment Analysis, Entity Extraction,
 
 # NLP Task GUI with API Integration 🧠💬
 
-This project is a GUI-based application built using Python that performs various Natural Language Processing (NLP) tasks by integrating free and powerful NLP APIs (like Hugging Face, Cohere, or TextRazor). It allows users to easily perform sentiment analysis, summarization, entity recognition, and more, without writing code.
+This project is a GUI-based application built using Python that performs various Natural Language Processing (NLP) tasks by integrating free and powerful NLP APIs (like NLP Cloud, Hugging Face, etc). It allows users to easily perform sentiment analysis, Semantic Analysis, Entity Extraction, and more, without writing code.
 
 ---
 
