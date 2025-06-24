@@ -22,6 +22,6 @@ This project is a GUI-based application built using Python that performs various
 
 - **Python**
 - **tkinter / PyQt5** (specify which GUI library you use)
-- **External NLP APIs**: 
-  - Not integrated APIs till now.
+- **External NLP APIs**:
+  - Integrate Semantic similarity API till now.
 ---
