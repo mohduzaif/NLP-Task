@@ -266,7 +266,7 @@ class NLPApp:
 
         response = self.api_object.call_api_sementic_similarity(text1, text2)
 
-        if type(response) == dict:     
+        if response:     
             self.sentiment_similarity_result = response
         else:
             messagebox.showerror('Error', 'Server is not working right now, Try later!')

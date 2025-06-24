@@ -1,15 +1,26 @@
-import nlpcloud
+import spacy
 
 
 class API:
 
     def call_api_sementic_similarity(self, text1, text2):
-        client = nlpcloud.Client("paraphrase-multilingual-mpnet-base-v2", "d4ac68d1607984d2fe23c20157d68cacb1ccba23", gpu=False)
-        response = client.semantic_similarity([
-                    text1,
-                    text2
-                    ])
-        if type(response) == dict:     
-            return response
-        else:
-            return False
+
+        # Load the medium English model (with word vectors)
+        nlp = spacy.load("en_core_web_md")
+
+        # Example sentences
+        sentence1 = text1
+        sentence2 = text2
+
+        # Process both sentences
+        doc1 = nlp(sentence1)
+        doc2 = nlp(sentence2)
+
+        # Compute similarity
+        similarity_score = doc1.similarity(doc2)
+
+        if similarity_score:
+            print(f"Similarity between {sentence1} and {sentence2} is: {similarity_score:.4f}")
+
+        return f"Similarity is : {similarity_score:.4f}"
+
